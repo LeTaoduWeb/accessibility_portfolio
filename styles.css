@@ -1,0 +1,473 @@
+/* Général - Variables */
+:root {
+    /* Couleurs */
+    --darkblue: #252B48;
+    --strawberry: #C2165A;
+    --almond: #FDF4E7;
+    --lightblue: #DCDFED;
+    --lightpink: #FCE7F0;
+    --white: #FFFFFF;
+    --text: #2E282F;
+
+    /* Shadow */
+    --shadow: 1px 3px 4px #C4C4C4;
+}
+
+/* Reset */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    vertical-align: baseline;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Typographies - Polices */
+    
+@font-face {
+    font-family: 'Luciole';
+    src: url("/fonts/Luciole-Regular.woff2") format("woff2"),
+        url("/fonts/Luciole-Regular.ttf") format("truetype"),
+        url("/fonts/Luciole-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: 'Luciole-bold';
+    src: url("/fonts/Luciole-Bold.woff2") format("woff2"),
+        url("fonts/Luciole-Bold.ttf") format("truetype"),
+        url("fonts/Luciole-Bold.woff") format("woff")
+}
+
+h1,
+h2,
+h4 {
+    font-family: 'Luciole', sans-serif;
+}
+
+h3 {
+    font-family: 'Luciole-bold', sans-serif;
+}
+
+p,
+a,
+label {
+    font-size: 17px; 
+    /* 1.0625rem */
+    line-height: 27px;
+    /* 1.9375rem */
+    font-family: Verdana, sans-serif;
+    margin-bottom: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Titres */
+
+h1,
+h2 {
+    font-size: 32px;
+    line-height: 49px;
+    margin-bottom: 32px;
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 43px;
+    margin-bottom: 24px;
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 32px;
+}
+
+section {
+    padding: 80px 24px;
+}
+
+/* Accès rapide */
+header {
+    background-color: var(--darkblue);
+}
+
+header a {
+    color: var(--text);
+}
+
+.before__header {
+    padding: 3% 24px;
+    background-color: var(--lightblue);
+    min-height: auto;
+}
+
+.before__header--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.before__header--container li:first-of-type {
+    margin-right: 16px;
+}
+
+.before__header--container a:hover,
+#customize:hover {
+    color: var(--strawberry);
+    text-decoration: underline;
+}
+
+/* Bouton Personnaliser */
+
+#customize {
+    background-color: var(--lightblue);
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 31px;
+    font-family: Verdana, sans-serif;
+    cursor: pointer;
+}
+
+#customize svg {
+    margin-right: 8px;
+}
+
+/* Menu burger */
+
+/* https://www.w3.org/WAI/ARIA/apg/example-index/disclosure/disclosure-navigation.html et voir Wfy */
+
+.header__site {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__burger {
+    fill: var(--white);
+    width: 48px;
+    height: 48px;
+}
+
+.nav__container {
+    display: none;
+}
+
+/* Hero */
+
+#hero {
+    height: auto;
+    width: 100%;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("./images/Background-Hero-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: var(--white);
+}
+
+.hero__city {
+    margin-bottom: 16px;
+    display: flex;
+}
+
+.hero__city--icon {
+    width: 24px;
+    /* 1.5 rem */
+    height: 24px;
+    margin-right: 8px;
+    fill: var(--white);
+}
+
+.hero__image {
+    margin: 40px;
+}
+
+/*  Vision métier  */
+
+.metier__challenge:last-of-type {
+    margin-bottom: 48px;
+}
+
+.langages {
+    margin: 64px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+/* Valeurs */
+/* https://www.w3.org/WAI/ARIA/apg/example-index/accordion/accordion.html */
+
+/* Titres accordéon */
+.metier__title {
+    padding: 6px 12px;
+    border-radius: 8px;
+    background-color: var(--darkblue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.metier__chevron {
+    fill: var(--white);
+    width: 32px;
+    height: 32px;
+}
+
+.metier__valeur1 h4,
+.metier__valeur2 h4,
+.metier__valeur3 h4 {
+    color: var(--white);
+    margin-bottom: 0;
+}
+
+/* Contenus accordéon */
+.metier__valeur1,
+.metier__valeur3 {
+    background-image: url('images/Background-almond-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.metier__valeur2 {
+    background-image: url('images/Background-lightblue-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.valeur__presentation {
+    padding: 32px 24px 64px;
+}
+
+.valeur1__icon,
+.valeur2__icon,
+.valeur3__icon {
+    display: none;
+    /* flex-shrink: 0; */
+}
+
+/* Réalisations */
+
+#realisation {
+    padding-top: 20px;
+}
+
+.realisations__filtre {
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.realisations__filtre button {
+    font-size: 18px;
+    margin: 8px;
+    background-color: var(--white);
+    font-family: Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.realisations__filtre button:active {
+    color: var(--strawberry);
+    font-weight: bold;
+}
+
+/* Cartes projet */
+
+.realisations__projet {
+    border-top: var(--lightblue) 3px solid;
+    padding: 24px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.realisations__projet--last {
+    border-bottom: var(--lightblue) 3px solid;
+}
+
+.realisations__presentation p {
+    width: 150px;
+}
+
+.realisations__title {
+    font-size: 22px;
+    line-height: 33px;
+    font-family: 'Luciole', sans-serif;
+}
+
+.realisations__etiquette {
+    display: inline-block;
+    color: var(--darkblue);
+    padding: 3px 0;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--almond);
+    text-align: center;
+}
+
+.realisations__etiquette--etude {
+    background-color: var(--lightpink);
+    color: var(--strawberry);
+}
+
+.realisations__image img {
+    width: 88px;
+    height: 88px;
+    margin-bottom: 24px;
+}
+
+.realisations__link {
+    display: flex;
+    justify-content: center;
+    gap: 16px; 
+}
+
+.realisations__link svg {
+    width: 24px;
+    height: 24px;
+}
+
+/*  Contact */
+
+#contact {
+    padding-top: 40px;
+}
+
+.contact__subtitle {
+    margin-bottom: 32px;
+}
+
+/*  Formulaire */
+
+.formulaire p {
+    color: var(--strawberry);
+    font-weight: bold;
+    margin-bottom: 72px;
+}
+
+form {
+    padding: 64px 24px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/Background-formulaire.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+input,
+textarea {
+    border: var(--darkblue) 1px solid;
+    border-radius: 5px;
+    font-size: 100%;
+    font-family: Verdana, sans-serif;
+    margin-bottom: 24px;
+}
+
+input[type='text'],
+input[type='mail'] {
+    height: 32px;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+input[type='submit'] {
+    background-color: var(--strawberry);
+    color: var(--white);
+    border: none;
+    align-self: flex-end;
+    font-weight: bold;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+input[type='submit']:hover {
+    background-color: var(--lightblue);
+    color: var(--darkblue);
+}
+
+
+/*  Footer */
+
+footer {
+    background-image: url(./images/Background-footer.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: var(--white);
+    padding: 120px 24px 8px;
+    text-align: center;
+}
+
+.footer__title {
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+.footer__text {
+    margin-bottom: 56px;
+}
+
+.footer__socialicon {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    margin-bottom: 56px;
+}
+
+.footer__socialicon a {
+    margin-bottom: 0;
+}
+
+.footer__socialicon svg {
+    width: 32px;
+    height: 32px;
+    fill: var(--white);
+}
+
+.footer__socialicon svg:active {
+    fill: var(--strawberry);
+}
+
+.footer__sitemap li {
+    margin-bottom: 12px;
+}
+
+.footer__sitemap a {
+    color: var(--white);
+}
+
+.footer__sitemap a:active {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer__copyright {
+    margin-top: 56px;
+}
+
+.footer__copyright p {
+    font-size: 15px;
+    margin-top: 24px;
+}
+
