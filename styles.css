@@ -98,7 +98,7 @@ header {
     background-color: var(--darkblue);
 }
 
-header a {
+.before__header a {
     color: var(--text);
 }
 
@@ -119,14 +119,14 @@ header a {
 }
 
 .before__header--container a:hover,
-#customize:hover {
+.customize:hover {
     color: var(--strawberry);
     text-decoration: underline;
 }
 
 /* Bouton Personnaliser */
 
-#customize {
+.customize {
     background-color: var(--lightblue);
     display: flex;
     align-items: center;
@@ -160,6 +160,10 @@ header a {
 
 .nav__container {
     display: none;
+}
+
+.nav__container a {
+    color: var(--white);
 }
 
 /* Hero */
@@ -343,6 +347,10 @@ header a {
 .realisations__link svg {
     width: 24px;
     height: 24px;
+}
+
+.realisations__link svg:hover {
+    fill: var(--strawberry)
 }
 
 /*  Contact */
@@ -587,7 +595,6 @@ footer {
     
     .header__menu a {
         margin: 0 20px;
-        color: var(--white);
     }
     
     .header__menu li:last-of-type {
