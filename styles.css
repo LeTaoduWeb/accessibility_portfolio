@@ -289,7 +289,7 @@ header a {
 
 .realisations__projet {
     border-top: var(--lightblue) 3px solid;
-    padding: 24px 8px;
+    padding: 24px 16px;
     display: flex;
     justify-content: space-between;
 }
@@ -298,7 +298,10 @@ header a {
     border-bottom: var(--lightblue) 3px solid;
 }
 
-.realisations__text,
+.realisations__text {
+    width: 90%;
+}
+
 .realisations__etiquette {
     width: 150px;
 }
