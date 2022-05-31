@@ -257,7 +257,6 @@ header a {
 .valeur2__icon,
 .valeur3__icon {
     display: none;
-    /* flex-shrink: 0; */
 }
 
 /* Réalisations */
@@ -299,7 +298,8 @@ header a {
     border-bottom: var(--lightblue) 3px solid;
 }
 
-.realisations__presentation p {
+.realisations__text,
+.realisations__etiquette {
     width: 150px;
 }
 
@@ -462,6 +462,10 @@ footer {
     font-weight: bold;
 }
 
+.bubbles {
+    display: none;
+}
+
 .footer__copyright {
     margin-top: 56px;
 }
@@ -471,3 +475,261 @@ footer {
     margin-top: 24px;
 }
 
+/* Responsive design */
+
+/* Tablet > 768px */
+
+@media screen and (min-width: 768px) {
+
+    /* Général */
+
+    section {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    /* Projets */
+
+    .realisations__image img {
+        width: auto;
+        height: auto;
+        margin-left: 48px;
+    }
+
+    .realisations__link {
+        margin-left: 48px;
+    }
+
+    .realisations__text {
+        width: auto;
+        margin-bottom: 32px;
+    }
+
+    /* Formulaire */
+
+    form {
+        padding: 64px 48px;
+    }
+}
+
+/* Desktop > 1080px */
+
+@media screen and (min-width: 1080px) {
+
+    /* Général */
+    h1 {
+        font-weight: 390;
+        font-size: 48px;
+        line-height: 67px;
+        margin-bottom: 40px;
+    
+    }
+    
+    h2 {
+        font-weight: 390;
+        font-size: 48px;
+        line-height: 79px;
+        margin-bottom: 38px;
+    }
+    
+    h3 {
+        font-size: 32px;
+        line-height: 50px;
+        margin-bottom: 32px;
+    }
+    
+    h4 {
+        font-weight: 450;
+        font-size: 28px;
+        line-height: 39px;
+        margin-bottom: 32px;
+    }
+    section {
+        padding: 120px 12%;
+    }
+
+    /* Menu */
+
+    .before__header {
+        padding: 1%;
+    }
+
+    .before__header--container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 7%;
+    }
+    
+    #menu__mobile {
+        display: none;
+    }
+
+    .nav__container {
+        display: flex;
+    }
+    
+    nav {
+        margin-left: auto;
+    } 
+
+    .header__site {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    
+    .header__menu {
+        display: flex;
+    }
+    
+    .header__menu a {
+        margin: 0 20px;
+        color: var(--white);
+    }
+    
+    .header__menu li:last-of-type {
+        margin-right: 32px;
+    }
+    
+    .header__menu--icon {
+        width: 24px;
+        height: 24px;
+        fill: var(--white);
+        margin-right: 8px;
+    }
+
+    /* Section Hero */
+
+    #hero {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero__image {
+        margin: 0 0 0 48px;
+    }
+
+    /*  Section Valeurs */
+
+    .metier__challenge {
+        margin: 0 10% 16px;
+    }
+
+    .metier__valeur1,
+    .metier__valeur3 {
+        background-image: url('./images/Background-qualite.svg');
+        padding: 48px 80px;
+    }
+
+    .metier__valeur2 {
+        background-image: url('./images/Background-access.svg');
+        padding: 48px 80px;
+    }
+
+    .metier__title {
+        display: inline-block;
+    }
+    
+    .metier__chevron {
+        display: none;
+    }
+
+    .metier__container {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .valeur__presentation {
+        padding: 32px;
+    }
+
+    .valeur1__icon,
+    .valeur2__icon,
+    .valeur3__icon {
+        display: inline;
+        padding-left: 8px;
+        flex-shrink: 0;
+    }
+
+    /* Section réalisations */
+
+    .realisations__projet {
+        justify-content: space-around;
+        margin: 0 7%;
+    }
+
+    .realisations__presentation {
+       width: 60%; 
+    }
+
+    /*  Formulaire */
+
+    form {
+        padding: 72px 20%;
+    }
+
+    /* Footer */
+
+    .footer__informations {
+        display: flex;
+        justify-content: space-between;
+        padding: 90px 10% 0 14%; 
+        text-align: left;
+        /* column-gap: 48px; */
+    }
+
+    .footer__presentation {
+        margin-right: 48px;
+    }
+
+    .footer__sitemap {
+        margin-right: 32px;
+    }
+
+    .footer__text {
+        width: 300px ;
+    }
+
+    .footer__socialicon {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .bubbles {
+        display: block;
+        width: 130px;
+        height: 130px;
+        background-image: url('images/Bubbles.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        align-self: center;
+    }
+
+    .footer__copyright {
+        margin-top: 0;
+    }
+}
+
+/* Desktop > 1440px */
+
+@media screen and (min-width: 1440px) {
+
+    /* Section Hero */
+
+    .hero__presentation {
+        padding-right: 64px;
+        width: 60%;
+    }
+
+    /*  Section Filtres Projet */
+
+    .realisations__image img  {
+        margin-left: 0;
+    }
+
+    .realisations__link  {
+        margin-left: 0;
+    }
+}
