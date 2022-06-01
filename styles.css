@@ -219,6 +219,7 @@ header {
 /* Titres accordéon */
 .metier__title {
     padding: 6px 12px;
+    margin-bottom: 16px;
     border-radius: 8px;
     background-color: var(--darkblue);
     display: flex;
@@ -226,10 +227,24 @@ header {
     align-items: center;
 }
 
-.metier__chevron {
+.metier__toggle {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.metier__chevron,
+.metier__chevron--minus {
     fill: var(--white);
     width: 32px;
     height: 32px;
+}
+
+.metier__toggle[aria-expanded="true"] .metier__chevron {
+    display: none;
+}
+
+.metier__toggle[aria-expanded="false"] .metier__chevron--minus {
+    display: none;
 }
 
 .metier__valeur1 h4,
@@ -245,6 +260,7 @@ header {
     background-image: url('images/Background-almond-mobile.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    transition: 0.3s ease;
 }
 
 .metier__valeur2 {
@@ -641,7 +657,7 @@ footer {
         display: inline-block;
     }
     
-    .metier__chevron {
+    .metier__toggle {
         display: none;
     }
 
