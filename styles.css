@@ -150,20 +150,75 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
-.menu__burger {
+#menuMobile {
+    background-color: transparent;
+    position: absolute;
+    top: 30px;
+    right: 24px;
+    z-index: 1;
+}
+
+.menu__burger,
+.menu__burger--close {
     fill: var(--white);
     width: 48px;
     height: 48px;
 }
 
-.nav__container {
+.menu__burger--close {
     display: none;
+    fill: var(--strawberry);
+}
+
+.header__menu {
+    background-color: var(--lightblue);
+    position: absolute;
+    top: 24px;
+    right: 12px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 72px;
+    border-radius: 5px;
+}
+
+.nav__container li {
+    margin-bottom: 16px;
+}
+
+.nav__container li:last-of-type {
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+.nav__container li:last-of-type a {
+    margin: 0 4px;
+    text-decoration: none;
 }
 
 .nav__container a {
-    color: var(--white);
+    color: var(--text);
+    font-size: 110%;
+}
+
+.nav__container a:hover {
+    color: var(--strawberry);
+    text-decoration: underline;
+    font-size: 110%;
+}
+
+.header__menu--icon {
+    width: 32px;
+    height: 32px;
+    fill: var(--text);
+}
+
+.header__menu--icon:hover {
+    fill: var(--strawberry);
 }
 
 /* Hero */
@@ -470,6 +525,12 @@ footer {
     width: 32px;
     height: 32px;
     fill: var(--white);
+    transition: .2s ease;
+}
+
+.footer__socialicon svg:hover {
+    width: 48px;
+    height: 48px;
 }
 
 .footer__socialicon svg:active {
@@ -484,9 +545,15 @@ footer {
     color: var(--white);
 }
 
-.footer__sitemap a:active {
+/* .footer__link:active {
     font-size: 18px;
     font-weight: bold;
+} */
+
+.footer__link:hover {
+    font-size: 110%;
+    text-decoration: underline;
+    transition: 0.2s ease;
 }
 
 .bubbles {
@@ -588,12 +655,35 @@ footer {
         margin-left: 7%;
     }
     
-    #menu__mobile {
+    .header__site {
+        font-size: 100%;
+    }
+
+    #menuMobile {
         display: none;
     }
 
     .nav__container {
         display: flex;
+    }
+
+    .nav__container li {
+        margin-bottom: 0;
+    }
+
+    .nav__container a {
+        font-size: 100%;
+        color: var(--white);
+        transition: 0.2s ease;
+    }
+
+    .nav__container a:hover {
+        font-size: 110%;
+        color: var(--white);
+    }
+
+    .nav__container li:last-of-type a {
+        margin-left: 12px;
     }
     
     nav {
@@ -607,21 +697,33 @@ footer {
     
     .header__menu {
         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        right: 24px;
+        padding: 0;
     }
     
     .header__menu a {
         margin: 0 20px;
     }
-    
-    .header__menu li:last-of-type {
-        margin-right: 32px;
+
+    .header__menu li:last-of-type a:last-of-type {
+        margin: 0 32px 0 12px;
     }
-    
+
     .header__menu--icon {
+        fill: var(--white);
         width: 24px;
         height: 24px;
+        transition: 0.2s ease;
+    }
+
+    .header__menu--icon:hover {
         fill: var(--white);
-        margin-right: 8px;
+        width: 32px;
+        height: 32px;
     }
 
     /* Section Hero */

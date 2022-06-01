@@ -41,46 +41,47 @@
             </div>
 
             <!-- Menu navigation principal -->
-            <div id="menu__mobile">
-                <svg class="menu__burger">
-                    <use xlink:href="./images/sprite.svg#icon-menu"></use>
-                </svg>
-            </div>
-            <div class="nav__container">
-                <nav role="navigation">
-                    <ul class="header__menu">
-                        <li>
-                            <a href="#metier">
-                                Vision du métier
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#realisation">
-                                Réalisations
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contact">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div>
-                    <a href="https://linkedin.com/in/sandrapetit">
-                        <svg role="img" aria-label= "Profil LinkedIn de Sandra"
-                        class="header__menu--icon">
-                            <use xlink:href="./images/sprite.svg#icon-linkedin-with-circle"></use>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/LeTaoduWeb/">
-                        <svg role="img" aria-label= "Profil GitHub de Sandra"
-                        class="header__menu--icon">
-                            <use xlink:href="./images/sprite.svg#icon-github"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+            <nav role="navigation" class="nav__container">
+                <button id="menuMobile" type="button" aria-haspopup = "true" aria-controls="navigationMobile">
+                    <svg class="menu__burger" aria-hidden="true">
+                        <use xlink:href="./images/sprite.svg#icon-menu"></use>
+                    </svg>
+                    <svg class="menu__burger--close" aria-hidden="true">
+                        <use xlink:href="./images/sprite.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                <ul class="header__menu" role="menu" id="navigationMobile" aria-labelledby="menuMobile">
+                    <li role="none">
+                        <a href="#metier" role="menuitem">
+                            Vision du métier
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a href="#realisation" role="menuitem">
+                            Réalisations
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a href="#contact" role="menuitem">
+                            Contact
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a href="https://linkedin.com/in/sandrapetit">
+                            <svg role="img" aria-label= "Profil LinkedIn de Sandra"
+                            class="header__menu--icon">
+                                <use xlink:href="./images/sprite.svg#icon-linkedin-with-circle"></use>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/LeTaoduWeb/">
+                            <svg role="img" aria-label= "Profil GitHub de Sandra"
+                            class="header__menu--icon">
+                                <use xlink:href="./images/sprite.svg#icon-github"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
         
     </header>
@@ -92,7 +93,7 @@
             <div class="hero__presentation">
                 <div class="hero__city">
                     <svg aria-hidden="true" class="hero__city--icon">
-                        <use xlink:href="./images/sprite.svg#icon-location"></use>
+                        <use xlink:href="./images/sprite.svg#icon-location-pin"></use>
                     </svg>
                     <p>Nantes, France</p>
                 </div>
@@ -176,6 +177,8 @@
 
             <!-- Valeurs -->
             <h3>Mes valeurs</h3>
+
+            <!-- Qualité web -->
             <div class="metier__valeur1">
                 <div class="metier__title">
                     <h4>Qualité web</h4>
@@ -549,17 +552,17 @@
                 </h2>
                 <ul>
                     <li>
-                        <a href="#top">
+                        <a href="#top" class="footer__link">
                             Accueil
                         </a>
                     </li>
                     <li>
-                        <a href="#metier">
+                        <a href="#metier" class="footer__link">
                             Vision du métier
                         </a>
                     </li>
                     <li>
-                        <a href="#realisation">
+                        <a href="#realisation" class="footer__link">
                             Réalisations
                         </a>
                     </li>
@@ -569,17 +572,17 @@
                         </a>
                     </li> -->
                     <li>
-                        <a href="#contact">
+                        <a href="#contact" class="footer__link">
                             Contact
                         </a>
                     </li>
                     <li>
-                        <a href="/mentions-legales">
+                        <a href="/mentions-legales" class="footer__link">
                             Mentions légales
                         </a>
                     </li>
                     <li>
-                        <a href="/accessibilite">
+                        <a href="/accessibilite" class="footer__link">
                             Accessibilité : non conforme
                         </a>
                     </li>
