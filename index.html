@@ -37,7 +37,7 @@
         <!-- En-tête -->
         <div class="header__site">
             <div class="header__logo">
-                <img src="./images/Sandra Petit Ubuntu 1.png" alt="Logo">
+                <img src="./images/Logo.svg" alt="">
             </div>
 
             <!-- Menu navigation principal -->
@@ -469,28 +469,28 @@
 
                 <form action="https://airform.io/webform@sandrapetit.dev" method="post">
                     <!-- Grouper les label avec leur champs -->
-                    <label for="lastname" required>
+                    <label for="lastname">
                         Votre nom
                     </label>
-                    <input type="text" name="lastname" id="lastname">
+                    <input type="text" name="lastname" id="lastname" required autocomplete="given-name">
 
-                    <label for="email" required>
+                    <label for="email">
                         Votre email, 
                         format attendu : nom@domaine.fr
                     </label>
-                    <input type="mail" name="email" id="email">
+                    <input type="email" name="email" id="email" required autocomplete="e-mail">
 
-                    <label for="company" required>
+                    <label for="company">
                         Votre entreprise
                     </label>
-                    <input type="text" name="company" id="company">
+                    <input type="text" name="company" id="company" required>
 
                     <label for="message">
                         Votre message
                     </label>
-                    <textarea name="message" id="message" wrap></textarea>
+                    <textarea name="message" id="message" wrap required></textarea>
 
-                    <input type="submit" value="Envoyer" title="Envoyer le message">
+                    <input type="submit" id="submitButton" value="Envoyer" title="Envoyer le message">
                 </form>
             </div>
         </section>
