@@ -41,16 +41,16 @@
             </div>
 
             <!-- Menu navigation principal -->
-            <nav role="navigation" class="nav__container">
+            <nav role="navigation" class="nav__container" aria-label="Menu de navigation principal">
                 <button id="menuMobile" type="button" aria-haspopup = "true" aria-controls="navigationMobile">
                     <svg class="menu__burger" aria-hidden="true">
                         <use xlink:href="./images/sprite.svg#icon-menu"></use>
                     </svg>
-                    <svg class="menu__burger--close" aria-hidden="true">
+                    <svg class="menu__burger--close hidden__mobile" aria-hidden="true">
                         <use xlink:href="./images/sprite.svg#icon-cross"></use>
                     </svg>
                 </button>
-                <ul class="header__menu" role="menu" id="navigationMobile" aria-labelledby="menuMobile">
+                <ul class="header__menu hidden__mobile" role="menu" id="navigationMobile" aria-labelledby="menuMobile">
                     <li role="none">
                         <a href="#metier" role="menuitem">
                             Vision du métier
@@ -296,25 +296,7 @@
                 Je vous présente un ensemble de projets dans lesquels j’ai participé avec un rôle de conceptrice du design, d’intégratrice web ou de développeuse...
             </p>
             <div class="realisations__projets">
-                <div class="realisations__filtre">
-                    <!-- A vérifier -->
-                    <button class="active">
-                        Tout
-                    </button>
-                    <button id="html">
-                        HTML/CSS
-                    </button>
-                    <button id="javascript">
-                        JS
-                    </button>
-                    <button id="wordpress">
-                        CMS
-                    </button>
-                    <button is="vue">
-                        Vue/Nuxt
-                    </button>
-                </div>
-
+                
                 <!-- Projet Portfolio -->
                 <div class="realisations__projet">
                     <div class="realisations__presentation">

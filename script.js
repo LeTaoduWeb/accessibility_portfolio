@@ -6,17 +6,14 @@ const menuClose = document.querySelector('.menu__burger--close');
 const containerNav = document.querySelector('#navigationMobile');
 
 function toggleNavMobile(){
-    if(menuButton.getAttribute('aria-expanded') === 'true') {
-        menuButton.removeAttribute('aria-expanded');
-        menuBurger.style.display='';
-        menuClose.style.display='';
-        containerNav.style.display = '';
-    } else {
-        menuButton.setAttribute('aria-expanded', 'true');
-        menuBurger.style.display = 'none';
-        menuClose.style.display = 'block';
-        containerNav.style.display = 'flex';
-    }
+        menuBurger.classList.toggle('hidden__mobile');
+        menuClose.classList.toggle('hidden__mobile');
+        containerNav.classList.toggle('hidden__mobile');
+        if(menuButton.getAttribute('aria-expanded') === 'true') {
+            menuButton.setAttribute('aria-expanded', 'false');
+        } else {
+            menuButton.setAttribute('aria-expanded', 'true');
+        }
 }
 
 menuButton.addEventListener('click', toggleNavMobile);

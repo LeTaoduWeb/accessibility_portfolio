@@ -169,7 +169,6 @@ header {
 }
 
 .menu__burger--close {
-    display: none;
     fill: var(--strawberry);
 }
 
@@ -178,12 +177,16 @@ header {
     position: absolute;
     top: 24px;
     right: 12px;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 72px 72px;
     border-radius: 5px;
+}
+
+.hidden__mobile {
+    display: none;
 }
 
 .nav__container li {
@@ -340,24 +343,8 @@ header {
     padding-top: 20px;
 }
 
-.realisations__filtre {
-    padding: 40px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.realisations__filtre button {
-    font-size: 18px;
-    margin: 8px;
-    background-color: var(--white);
-    font-family: Verdana, sans-serif;
-    cursor: pointer;
-}
-
-.realisations__filtre button:active {
-    color: var(--strawberry);
-    font-weight: bold;
+.realisations__projet:first-of-type {
+    margin-top: 96px;
 }
 
 /* Cartes projet */
@@ -851,7 +838,7 @@ footer {
         width: 60%;
     }
 
-    /*  Section Filtres Projet */
+    /*  Section Projet */
 
     .realisations__image img  {
         margin-left: 0;
