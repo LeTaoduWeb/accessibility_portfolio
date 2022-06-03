@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Accessibility CSS -->
+    <link rel="stylesheet" href="accessconfig/css/accessconfig.min.css" type="text/css" media="screen" />
+    <!-- Accessibility Script -->
+    <script src="accessconfig/js/accessconfig.min.js" type="text/javascript"></script>
+    <title>Mentions légales | Sandra Petit</title>
+</head>
+<body>
+
+    <!-- En-tête -->
+
+    <header role="banner">
+        <!-- Menu accès rapide -->
+        <div class="before__header">
+            <ul class="before__header--container">
+                <li>
+                    <a href="#main">Contenu</a>
+                </li>
+                <li>
+                    <button class="customize" id="accessconfig" 
+                        data-accessconfig-button="true" data-accessconfig-buttonname="" data-accessconfig-params='{"Prefix" : "a42-ac", "ContainerClass" : "","ModalCloseButton" : "","ModalTitle" : "","FormFieldset" : "","FormFieldsetLegend" : "","FormRadio" : "", "Justification": false, "Contrast": false}'>
+                                <svg aria-hidden="true" width="18pt" height="21pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m50 25c4.6016 0 8.332-3.7305 8.332-8.332 0-4.6055-3.7305-8.3359-8.332-8.3359s-8.332 3.7305-8.332 8.3359c0 4.6016 3.7305 8.332 8.332 8.332zm-37.375 3.1562c0.55859-2.2344 2.8203-3.5898 5.0508-3.0312 8.0391 2.0078 22.699 4.043 32.324 4.043s24.285-2.0352 32.324-4.043c2.2305-0.55859 4.4922 0.79688 5.0508 3.0312 0.55859 2.2305-0.79688 4.4961-3.0312 5.0508-5.543 1.3867-13.855 2.7656-21.844 3.5703v13.223c0 9.6289 2.0312 28.453 4.043 36.492 0.55859 2.2305-0.80078 4.4922-3.0312 5.0508-2.2344 0.55859-4.4961-0.79688-5.0547-3.0312-1.4453-5.7891-2.8828-16.473-3.6719-26.012h-9.5703c-0.78906 9.5391-2.2227 20.223-3.6719 26.012-0.55859 2.2344-2.8203 3.5898-5.0508 3.0312-2.2344-0.55859-3.5898-2.8203-3.0352-5.0508 1.9844-7.9375 3.9922-26.387 4.043-36.117v-13.598c-7.9883-0.80469-16.301-2.1836-21.844-3.5703-2.2344-0.55469-3.5898-2.8203-3.0312-5.0508z" fill="#262a49" fill-rule="evenodd"/>
+                            </svg>
+                            <span>
+                                Personnaliser
+                            </span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- En-tête -->
+        <div class="header__site">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="./images/Logo.svg" alt="">
+                </a>
+            </div>
+
+            <!-- Menu navigation principal -->
+            <nav role="navigation" class="nav__container" aria-label="Menu de navigation principal">
+                <button id="menuMobile" type="button" aria-haspopup = "true" aria-controls="navigationMobile">
+                    <svg class="menu__burger" aria-hidden="true">
+                        <use xlink:href="./images/sprite.svg#icon-menu"></use>
+                    </svg>
+                    <svg class="menu__burger--close hidden__mobile" aria-hidden="true">
+                        <use xlink:href="./images/sprite.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                <ul class="header__menu hidden__mobile" role="menu" id="navigationMobile" aria-labelledby="menuMobile">
+                    <li role="none">
+                        <a href="index.html#metier" role="menuitem">
+                            Vision du métier
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a href="index.html#realisation" role="menuitem">
+                            Réalisations
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a href="index.html#contact" role="menuitem">
+                            Contact
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a href="https://linkedin.com/in/sandrapetit">
+                            <svg role="img" aria-label= "Profil LinkedIn de Sandra"
+                            class="header__menu--icon">
+                                <use xlink:href="./images/sprite.svg#icon-linkedin-with-circle"></use>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/LeTaoduWeb/">
+                            <svg role="img" aria-label= "Profil GitHub de Sandra"
+                            class="header__menu--icon">
+                                <use xlink:href="./images/sprite.svg#icon-github"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Bouton vers le haut mobile et tablette -->
+
+        <button id="topBtn">
+            <svg class="topArrow">
+                <use xlink:href="images/sprite.svg#icon-chevron-up"></use>
+            </svg>
+    </button>
+        
+    </header>
+    
+    <!-- Main -->
+    <main id="main" tabindex="-1">
+        <section class="policy">
+
+            <h1 class="policy__heading">Mentions légales</h1>
+
+            <div class= "policy__wrapper">
+                <h2 class="policy__title">
+                    Édition du site
+                </h2>
+                <p>
+                    Le présent site accessible à l’adresse
+                    <a href="#">https://sandrapetit.dev</a> est édité par :
+                </p>
+                <ul class="policy__group">
+                    <li class="policy__item">
+                        Sandra Petit
+                    </li>
+                    <li class="policy__item">
+                        44240 La Chapelle sur Erdre
+                    </li>
+                </ul>
+                <p>
+                    Directrice de publication et responsable de la rédaction : Sandra
+                </p>
+                
+                <p>
+                    Vous pouvez me contacter par <a href="mailto:hello&sandrapetit.dev">mail</a>
+                </p>
+            </div>
+
+            <div class= "policy__wrapper--lightblue">
+                <h2 class="policy__title">
+                    Hébergement du site
+                </h2>
+                <ul class="policy__group">
+                    <li class="policy__item">
+                        Infomaniak
+                    </li>
+                    <li class="policy__item">
+                        25 Eugène-Marziano
+                    </li>
+                    <li class="policy__item">
+                        1227 Les Acacias
+                    </li>
+                    <li class="policy__item">
+                        Genève ⎢Suisse
+                    </li>
+                    <li class="policy__item policy__item--space">
+                        <a href="tel:+41228203544">+ 41 22 820 35 44</a>
+                    </li>
+                    <li class="policy__item">
+                        <a href="
+                            https://www.infomaniak.com/goto/fr/hosting.web?utm_term=5c8680fb5a04d" target="_blank">
+                                https://infomaniak.com/fr
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class= "policy__wrapper">
+                <h2 class="policy__title">
+                    Accès au site
+                </h2>
+
+                <p>
+                    Le présent site  est accessible 24h/24, 7j/7, sauf en cas de force majeure, d’interruption programmée ou non pour des besoins de maintenance. De temps en temps, le site a besoin d’un soin jeunesse pour être au top pour vous…
+                </p>
+            </div>  
+
+            <div class= "policy__wrapper--lightblue policy__specialPadding">
+                <h2 class="policy__title">
+                    Propriété intellectuelle
+                </h2>
+                <p>
+                    Tout le contenu du site <a href="https://sandrapetit.dev">sandrapetit.dev</a> est protégé par les lois en vigueur sur la propriété intellectuelle. Sont concernés :
+                </p>
+                <ul class="policy__group">
+                    <li class="policy__item policy__item--deco">les marques,</li>
+                    <li class="policy__item policy__item--deco">les photographies,</li>
+                    <li class="policy__item policy__item--deco">les textes,</li>
+                    <li class="policy__item policy__item--deco">les illustrations (même si elles sont jolies…),</li>
+                    <li class="policy__item policy__item--deco">les images animées ou non et,</li>
+                    <li class="policy__item policy__item--deco">plus généralement, tous les éléments reproduits ou utilisés sur le Site.</li>
+                </ul>
+            </div>
+            <div class= "policy__wrapper--lightblue policy__specialPadding">
+                <p>
+                    Ils sont la <span class="policy__txt--underline">propriété pleine et entière de l’Editeur (moi-même) ou de ses partenaires</span>, sauf mentions particulières.
+                </p>
+                <p>
+                    En résumé, toute reproduction, représentation, utilisation ou adaptation, sous quelque forme que ce soit, de tout ou partie de ces éléments, y compris les applications informatiques, sans mon accord préalable et écrit, sont strictement interdites. Le fait pour l’Editeur (moi-même) de ne pas engager de procédure dès la prise de connaissance de ces utilisations non autorisées ne vaut pas acceptation desdites utilisations et renonciation aux poursuites.
+                </p>
+            </div>
+
+            <div class= "policy__wrapper">
+                <h2 class="policy__title">
+                    Liens hypertextes
+                </h2>
+                <p>
+                    Pour vous offrir la meilleure information de qualité possible, je vous propose parfois, d’aller visiter un site autre que <a href="#">sandrapetit.dev</a>, via un lien hypertexte. Ces sites web sont édités et gérés par des tiers et non par moi-même. Je ne pourrai être tenue responsable directement ou indirectement dans le cas où lesdits sites tiers ne respecteraient pas les dispositions légales. 
+                </p>
+            </div>
+        </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+
+        <!-- Partie Informations -->
+        <div class="footer__informations">
+
+            <!-- Partie présentation pied page -->
+            <div class="footer__presentation">
+                <h2 class="footer__title">
+                    Sandra Petit
+                </h2>
+                <p class="footer__text">
+                    Développeuse front-end à tendance Qualité web et Sobriété numérique 
+                </p>
+                <h2 class="footer__title">
+                    Réseaux sociaux
+                </h2>
+                <div class="footer__socialicon">
+                    <a href="https://linkedin.com/in/sandrapetit">
+                        <svg role="img" aria-label= "Profil LinkedIn de Sandra">
+                            <use xlink:href="./images/sprite.svg#icon-linkedin-with-circle"></use>
+                        </svg>
+                    </a>
+                    <a href="https://github.com">
+                        <svg role="img" aria-label= "Profil GitHub de Sandra">
+                            <use xlink:href="./images/sprite.svg#icon-github"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Plan de site/navigation -->
+            <div class="footer__sitemap">
+                <h2 class="footer__title">
+                    Plan du site
+                </h2>
+                <ul>
+                    <li>
+                        <a href="index.html" class="footer__link">
+                            Accueil
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#metier" class="footer__link">
+                            Vision du métier
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#realisation" class="footer__link">
+                            Réalisations
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="">
+                            Études de cas
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="index.html#contact" class="footer__link">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            Mentions légales
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="/accessibilite" class="footer__link">
+                            Accessibilité : non conforme
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+
+            <!-- Illustration -->
+            <div class="bubbles"></div>
+        </div>
+
+        <div class="footer__copyright">
+
+            <!-- Image SVG Infomaniak -->
+            <a href="https://www.infomaniak.com/goto/fr/home?utm_term=5c8680fb5a04d">
+                <svg width="120" height="48" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hébergé écologiquement par Infomaniak">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 31.0361H79.6094V0H0V31.0361Z" fill="#262B49"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M49.2377 13.485C49.0893 13.8664 48.9156 14.1368 48.7172 14.2968C48.5182 14.4567 48.2739 14.5361 47.9851 14.5361C47.824 14.5361 47.6648 14.5194 47.5068 14.4836V14.0717C47.6244 14.0968 47.7553 14.1099 47.8994 14.1099C48.2631 14.1099 48.5218 13.9112 48.6762 13.5154L48.8716 13.0325L47.4628 9.62347H48.0303L48.7956 11.5569C48.9627 11.998 49.0676 12.3168 49.1074 12.5132H49.1322C49.1605 12.4075 49.2178 12.2278 49.3058 11.9736C49.3945 11.7181 49.6828 10.9349 50.1719 9.62347H50.7388L49.2377 13.485ZM46.4363 10.3219C46.2771 10.1052 46.0304 9.99655 45.6969 9.99655C45.335 9.99655 45.0757 10.098 44.9159 10.2992C44.7566 10.4998 44.677 10.8382 44.677 11.3157C44.677 11.7915 44.7591 12.1323 44.9231 12.3383C45.0859 12.5436 45.3483 12.6463 45.7095 12.6463C46.0346 12.6463 46.2771 12.5305 46.4363 12.3013C46.5955 12.0708 46.6757 11.7408 46.6757 11.3092C46.6757 10.8675 46.5955 10.5386 46.4363 10.3219ZM46.8392 12.6135C46.5834 12.9227 46.2282 13.0761 45.7729 13.0761C45.5461 13.0761 45.338 13.0355 45.1511 12.9543C44.9629 12.8725 44.8037 12.7478 44.677 12.5776H44.6384L44.5269 13.0134H44.1481V8.19922H44.677V9.36859C44.677 9.63123 44.6686 9.86642 44.6517 10.0741H44.677C44.9237 9.73629 45.2892 9.56736 45.7729 9.56736C46.2318 9.56736 46.5883 9.71958 46.8422 10.0234C47.0961 10.3278 47.2239 10.7582 47.2239 11.3157C47.2239 11.8721 47.0955 12.3054 46.8392 12.6135ZM41.0632 11.3277C41.0632 10.8478 40.98 10.5045 40.816 10.2992C40.6507 10.0932 40.3884 9.99058 40.0271 9.99058C39.7165 9.99058 39.4789 10.1082 39.3143 10.3428C39.1496 10.5762 39.067 10.9069 39.067 11.3342C39.067 11.7676 39.1496 12.0947 39.313 12.3156C39.4765 12.5359 39.7165 12.6463 40.0331 12.6463C40.3944 12.6463 40.6562 12.5508 40.819 12.3598C40.9824 12.1687 41.0632 11.8607 41.0632 11.4357V11.3277ZM41.1616 13.0134L41.091 12.5597H41.0632C40.8184 12.9036 40.4529 13.0761 39.9668 13.0761C39.5103 13.0761 39.1544 12.9244 38.9005 12.6212C38.6466 12.318 38.5194 11.887 38.5194 11.3277C38.5194 10.769 38.6466 10.335 38.9017 10.0246C39.1568 9.716 39.5121 9.5608 39.9668 9.5608C40.4396 9.5608 40.8033 9.72853 41.0566 10.0622H41.0976L41.0753 9.81807L41.0632 9.5793V8.19922H41.591V13.0134H41.1616ZM37.1527 10.249C37.0026 10.0777 36.7909 9.99058 36.5147 9.99058C36.2336 9.99058 36.0111 10.0789 35.8434 10.2574C35.6769 10.4353 35.5786 10.6806 35.5491 10.9934H37.3753C37.3753 10.6699 37.3011 10.4222 37.1527 10.249ZM35.5358 11.4107C35.5473 11.8094 35.6504 12.1114 35.847 12.318C36.043 12.5239 36.3205 12.6272 36.6775 12.6272C37.0532 12.6272 37.4247 12.5508 37.7932 12.3986V12.857C37.6051 12.9352 37.4284 12.9907 37.2619 13.0247C37.0954 13.0593 36.8934 13.0761 36.6588 13.0761C36.1413 13.0761 35.7336 12.9233 35.4357 12.6182C35.1378 12.3132 34.9882 11.8888 34.9882 11.3462C34.9882 10.7994 35.1263 10.3654 35.4037 10.0437C35.6818 9.72137 36.0533 9.5608 36.5213 9.5608C36.9585 9.5608 37.3053 9.70047 37.5604 9.97983C37.8155 10.2604 37.9428 10.6287 37.9428 11.0859V11.4107H35.5358ZM33.7259 12.4881C33.8254 12.5973 33.9629 12.6517 34.1372 12.6517C34.2307 12.6517 34.3212 12.6451 34.4074 12.632C34.4949 12.6182 34.5642 12.6045 34.6155 12.5902V12.9829C34.5582 13.0098 34.4732 13.0325 34.361 13.0498C34.25 13.0677 34.1493 13.0761 34.06 13.0761C33.3846 13.0761 33.0468 12.7304 33.0468 12.0398V10.0216H32.5468V9.77449L33.0468 9.5608L33.27 8.83733H33.5763V9.62347H34.5889V10.0216H33.5763V12.0177C33.5763 12.2219 33.6264 12.3789 33.7259 12.4881ZM31.0644 9.99058C30.8141 9.99058 30.6242 10.0294 30.4969 10.1052C30.369 10.1816 30.3063 10.2872 30.3063 10.421C30.3063 10.5117 30.3298 10.5887 30.3775 10.6538C30.4257 10.717 30.5029 10.7779 30.6085 10.8358C30.7146 10.8931 30.9185 10.9767 31.2206 11.0859C31.6356 11.2334 31.9142 11.3802 32.0601 11.5294C32.2055 11.6775 32.2791 11.8643 32.2791 12.0888C32.2791 12.4045 32.1578 12.6481 31.9154 12.8188C31.6736 12.9907 31.3334 13.0761 30.8955 13.0761C30.4324 13.0761 30.0711 13.005 29.8124 12.863V12.386C29.98 12.4684 30.1598 12.5341 30.3522 12.5806C30.5439 12.6284 30.7297 12.6517 30.9082 12.6517C31.1844 12.6517 31.3973 12.6093 31.5463 12.5239C31.6947 12.4386 31.7688 12.3072 31.7688 12.1323C31.7688 12.0004 31.7097 11.887 31.5921 11.7939C31.4739 11.7002 31.2441 11.5885 30.9028 11.4602C30.5771 11.3432 30.3461 11.2411 30.2086 11.1528C30.0723 11.065 29.9698 10.9659 29.9022 10.8543C29.8365 10.7433 29.8021 10.6102 29.8021 10.455C29.8021 10.1786 29.9185 9.96133 30.1495 9.80135C30.3811 9.64138 30.6989 9.5608 31.1024 9.5608C31.4788 9.5608 31.8466 9.63481 32.2055 9.78404L32.0179 10.2019C31.6663 10.0616 31.3491 9.99058 31.0644 9.99058ZM28.4114 10.3326C28.2316 10.1094 27.9669 9.99655 27.6165 9.99655C27.2697 9.99655 27.008 10.1082 26.8325 10.3284C26.6557 10.5493 26.5671 10.8782 26.5671 11.3157C26.5671 11.7485 26.6563 12.0786 26.8349 12.3054C27.014 12.5329 27.2757 12.6463 27.6225 12.6463C27.9687 12.6463 28.2316 12.5329 28.4114 12.3072C28.5905 12.0816 28.681 11.7509 28.681 11.3157C28.681 10.8842 28.5905 10.5571 28.4114 10.3326ZM28.798 12.6105C28.5121 12.9215 28.1153 13.0761 27.6092 13.0761C27.2974 13.0761 27.02 13.005 26.7782 12.863C26.5357 12.7209 26.3482 12.5156 26.2167 12.2499C26.0852 11.9831 26.0189 11.6721 26.0189 11.3157C26.0189 10.763 26.1612 10.3314 26.4465 10.0234C26.7311 9.71599 27.1262 9.5608 27.6322 9.5608C28.1201 9.5608 28.5091 9.71838 28.7968 10.0348C29.085 10.3499 29.2286 10.7767 29.2286 11.3157C29.2286 11.8679 29.085 12.3001 28.798 12.6105ZM24.7288 13.0134V10.8209C24.7288 10.5445 24.6637 10.338 24.534 10.2019C24.4044 10.0652 24.2017 9.99655 23.9255 9.99655C23.5582 9.99655 23.2892 10.0938 23.1204 10.2878C22.9515 10.4818 22.8671 10.7994 22.8671 11.2411V13.0134H22.3381V8.19922H22.8671V9.6569C22.8671 9.8318 22.858 9.97804 22.8411 10.0932H22.8737C22.9774 9.93029 23.1252 9.80195 23.3182 9.70764C23.5112 9.61452 23.7301 9.56736 23.9768 9.56736C24.4032 9.56736 24.724 9.66585 24.9375 9.86284C25.1504 10.0592 25.2578 10.3726 25.2578 10.8018V13.0134H24.7288Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M72.8205 13.8931C71.244 15.5238 69.0228 14.1766 66.193 16.0562C62.7083 18.3697 63.6853 21.4801 64.5447 22.4733C64.7238 21.5511 65.45 19.9622 66.6586 18.6437C68.4136 16.7289 71.2355 15.5148 71.244 15.5238C71.2524 15.5327 68.9516 17.013 67.5186 18.8209C66.3938 20.2409 65.8607 21.5732 65.5513 22.7628C65.5513 22.7628 69.6777 22.8469 71.0299 20.6361C72.695 17.9137 72.8567 14.2828 72.8205 13.8931Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M63.2397 22.6492H60.9811L59.9215 20.6121L59.1658 21.3289V22.6492H57.1171V15.6379H59.1658V19.2561L60.6639 17.5693H63.1312L61.2549 19.3486L63.2397 22.6492ZM54.3573 20.2385C54.0816 20.334 53.7946 20.4187 53.4954 20.4921C53.0883 20.5972 52.8302 20.701 52.7223 20.8025C52.6101 20.9076 52.5546 21.0275 52.5546 21.1612C52.5546 21.3146 52.6089 21.44 52.7198 21.5366C52.8296 21.6339 52.9912 21.6823 53.2047 21.6823C53.4279 21.6823 53.636 21.6304 53.8283 21.5241C54.0195 21.4191 54.1552 21.2919 54.2366 21.1397C54.3168 20.9887 54.3573 20.7918 54.3573 20.5488V20.2385ZM54.6878 22.6492C54.6118 22.5173 54.5623 22.4188 54.5394 22.3496C54.5171 22.2815 54.4936 22.1735 54.4706 22.0273C54.2071 22.2726 53.9472 22.4474 53.6878 22.5525C53.332 22.6934 52.9207 22.7632 52.4509 22.7632C51.8266 22.7632 51.3526 22.6235 51.0293 22.3424C50.7061 22.0625 50.5438 21.7169 50.5438 21.3051C50.5438 20.9195 50.6614 20.602 50.8936 20.3525C51.1276 20.1042 51.5583 19.9198 52.1849 19.7986C52.9363 19.6518 53.4249 19.5491 53.648 19.49C53.8712 19.4303 54.107 19.3539 54.3573 19.2579C54.3573 19.0185 54.3066 18.8514 54.2053 18.7559C54.1034 18.6598 53.9242 18.6121 53.6679 18.6121C53.3392 18.6121 53.0926 18.6634 52.9285 18.7648C52.8 18.8454 52.6975 18.9946 52.6185 19.2149L50.7019 19.0185C50.7742 18.6932 50.8786 18.4372 51.0143 18.2516C51.1512 18.0641 51.3472 17.9036 51.6035 17.7657C51.7874 17.6666 52.0401 17.5908 52.3628 17.5365C52.6843 17.4816 53.0322 17.4553 53.4062 17.4553C54.0075 17.4553 54.4899 17.4882 54.8554 17.5532C55.2197 17.6183 55.5231 17.755 55.7661 17.9621C55.9374 18.1053 56.0713 18.3089 56.1708 18.5715C56.2691 18.8347 56.3179 19.0854 56.3179 19.3247V21.5677C56.3179 21.807 56.3336 21.9944 56.365 22.1293C56.3957 22.2648 56.4639 22.4379 56.5688 22.6492H54.6878ZM47.9083 16.9623H49.9136V15.6379H47.9083V16.9623ZM47.9083 22.6492H49.9136V17.5693H47.9083V22.6492ZM45.0261 22.6492V19.8553C45.0261 19.5372 44.9658 19.311 44.8439 19.1791C44.7227 19.0466 44.552 18.9809 44.3319 18.9809C44.0888 18.9809 43.8916 19.0698 43.7402 19.2489C43.5895 19.4274 43.5135 19.7473 43.5135 20.2092V22.6492H41.5094V17.5693H43.3754V18.3972C43.6546 18.0594 43.9369 17.8176 44.2233 17.6726C44.5086 17.5276 44.8572 17.4553 45.2673 17.4553C45.8228 17.4553 46.2576 17.6147 46.57 17.9358C46.8842 18.2569 47.041 18.7517 47.041 19.4202V22.6492H45.0261ZM38.7496 20.2385C38.4734 20.334 38.1863 20.4187 37.8877 20.4921C37.48 20.5972 37.2219 20.701 37.1146 20.8025C37.0024 20.9076 36.9463 21.0275 36.9463 21.1612C36.9463 21.3146 37.0018 21.44 37.1122 21.5366C37.2213 21.6339 37.3836 21.6823 37.5964 21.6823C37.8196 21.6823 38.0277 21.6304 38.2201 21.5241C38.4118 21.4191 38.5481 21.2919 38.6284 21.1397C38.7098 20.9887 38.7496 20.7918 38.7496 20.5488V20.2385ZM39.0795 22.6492C39.0041 22.5173 38.954 22.4188 38.9317 22.3496C38.9088 22.2815 38.8853 22.1735 38.863 22.0273C38.6 22.2726 38.3389 22.4474 38.0795 22.5525C37.7249 22.6934 37.313 22.7632 36.8426 22.7632C36.2184 22.7632 35.7455 22.6235 35.4217 22.3424C35.0984 22.0625 34.9368 21.7169 34.9368 21.3051C34.9368 20.9195 35.0532 20.602 35.2866 20.3525C35.5194 20.1042 35.9494 19.9198 36.5772 19.7986C37.3293 19.6518 37.8172 19.5491 38.0403 19.49C38.2635 19.4303 38.4999 19.3539 38.7496 19.2579C38.7496 19.0185 38.6983 18.8514 38.5964 18.7559C38.4951 18.6598 38.3166 18.6121 38.0602 18.6121C37.7321 18.6121 37.4849 18.6634 37.3202 18.7648C37.193 18.8454 37.0892 18.9946 37.0108 19.2149L35.0942 19.0185C35.1665 18.6932 35.2709 18.4372 35.4072 18.2516C35.5435 18.0641 35.7395 17.9036 35.9952 17.7657C36.1798 17.6666 36.4325 17.5908 36.7539 17.5365C37.0766 17.4816 37.424 17.4553 37.7991 17.4553C38.3998 17.4553 38.8829 17.4882 39.2477 17.5532C39.6114 17.6183 39.916 17.755 40.1584 17.9621C40.3297 18.1053 40.4642 18.3089 40.5619 18.5715C40.6608 18.8347 40.7109 19.0854 40.7109 19.3247V21.5677C40.7109 21.807 40.7265 21.9944 40.7573 22.1293C40.7881 22.2648 40.8568 22.4379 40.9618 22.6492H39.0795ZM32.3796 22.6492V19.7556C32.3796 19.5264 32.3338 19.3551 32.2421 19.2435C32.1076 19.0681 31.9406 18.9809 31.7409 18.9809C31.5057 18.9809 31.3151 19.0633 31.1716 19.2292C31.0275 19.3945 30.9557 19.6607 30.9557 20.0278V22.6492H28.9462V19.8517C28.9462 19.6279 28.9323 19.4769 28.9063 19.3963C28.8629 19.2692 28.7887 19.1659 28.6838 19.0883C28.5789 19.0096 28.4546 18.9708 28.3129 18.9708C28.0825 18.9708 27.8925 19.0555 27.7442 19.2244C27.5958 19.3939 27.5216 19.6715 27.5216 20.0564V22.6492H25.5121V17.5693H27.3835V18.3106C27.6537 18.0021 27.9263 17.7824 28.2001 17.6505C28.4751 17.5198 28.8062 17.4553 29.194 17.4553C29.6126 17.4553 29.9431 17.527 30.1867 17.6702C30.4298 17.8135 30.6288 18.0271 30.7832 18.3106C31.098 17.9794 31.3851 17.7538 31.6438 17.6344C31.9038 17.5144 32.2234 17.4553 32.6034 17.4553C33.1649 17.4553 33.6015 17.6165 33.9175 17.9406C34.2323 18.2641 34.3892 18.7702 34.3892 19.4584V22.6492H32.3796ZM22.6401 19.1164C22.4532 18.9015 22.221 18.7941 21.9447 18.7941C21.6528 18.7941 21.4116 18.9033 21.221 19.1218C21.0304 19.3402 20.9351 19.6733 20.9351 20.1191C20.9351 20.5715 21.0292 20.9064 21.218 21.123C21.4068 21.3403 21.645 21.4483 21.9303 21.4483C22.2192 21.4483 22.4562 21.3421 22.6425 21.1278C22.8277 20.9147 22.92 20.5715 22.92 20.1C22.92 19.6601 22.8271 19.3325 22.6401 19.1164ZM24.1352 22.0153C23.6015 22.5143 22.8633 22.7632 21.9206 22.7632C21.0793 22.7632 20.4002 22.5561 19.8809 22.1413C19.2434 21.6286 18.9256 20.9553 18.9256 20.1239C18.9256 19.3486 19.1946 18.7099 19.7332 18.208C20.2711 17.706 20.9991 17.4553 21.9158 17.4553C22.9634 17.4553 23.7547 17.7496 24.2902 18.3399C24.7202 18.8144 24.9349 19.3999 24.9349 20.0952C24.9349 20.8759 24.6684 21.5164 24.1352 22.0153ZM19.2151 16.8149C18.9757 16.7761 18.7815 16.7564 18.6343 16.7564C18.4534 16.7564 18.3237 16.7863 18.2453 16.8448C18.1663 16.9039 18.1096 16.9976 18.077 17.1247C18.0608 17.1945 18.0529 17.3431 18.0529 17.5693H19.0082V18.9946H18.0529V22.6492H16.0434V18.9946H15.2937V17.5693H16.0434V17.3396C16.0434 17.133 16.0657 16.905 16.1121 16.6568C16.158 16.4073 16.2442 16.2043 16.3709 16.0462C16.4969 15.8886 16.6742 15.7615 16.9028 15.6642C17.1302 15.5669 17.4649 15.5186 17.9046 15.5186C18.2568 15.5186 18.767 15.5573 19.437 15.6379L19.2151 16.8149ZM13.0128 22.6492V19.8553C13.0128 19.5372 12.9525 19.311 12.8307 19.1791C12.7088 19.0466 12.5388 18.9809 12.3186 18.9809C12.0756 18.9809 11.8778 19.0698 11.727 19.2489C11.5762 19.4274 11.5002 19.7473 11.5002 20.2092V22.6492H9.49551V17.5693H11.3621V18.3972C11.6419 18.0594 11.9236 17.8176 12.2101 17.6726C12.4953 17.5276 12.8433 17.4553 13.254 17.4553C13.8095 17.4553 14.2437 17.6147 14.5567 17.9358C14.8704 18.2569 15.0278 18.7517 15.0278 19.4202V22.6492H13.0128ZM6.61328 16.9623H8.61799V15.6379H6.61328V16.9623ZM6.61328 22.6492H8.61799V17.5693H6.61328V22.6492Z" fill="white"/>
+                </svg>
+            </a>
+
+            <!-- Droits -->
+            <p>
+                Tous droits réservés - 2022
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
