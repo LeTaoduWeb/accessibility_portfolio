@@ -1,2 +1,5 @@
 ## Exclusion DS Store
 .DS_Store
+
+## Exclusion fichiers pseudocode
+*.pseudo
