@@ -26,9 +26,6 @@ mybutton = document.querySelector("#topBtn");
 // Montrer le bouton lorsque l'utilisateur descend au-dessus de 100px
 window.onscroll = function() {scrollFunction()};
 
-let isMobileDevice = navigator.userAgent.match(/iPad|iPhone|iPod/i) != null 
-    || screen.width <= 480;
-
 function scrollFunction() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     mybutton.style.display = "block";
